@@ -95,6 +95,11 @@ npm run dev
 
 Visit `http://localhost:5173` in your browser!
 
+### 4. Validation by using Zod
+
+<img width="960" height="913" alt="image" src="https://github.com/user-attachments/assets/08411488-6104-4ca1-bada-ef21b82cdf61" />
+
+
 ### Example Request
 
 ```bash
