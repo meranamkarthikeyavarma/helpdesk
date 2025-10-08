@@ -20,19 +20,12 @@ A full-stack ticket management system built with **React + TypeScript (Frontend)
 
 # Backend:
 
-```bash
-cd Server
-npm install
-npm run dev
-# Server runs on http://localhost:4000
+<img width="406" height="127" alt="image" src="https://github.com/user-attachments/assets/dffd9af4-c4a2-4c81-b8c4-8a622ffbb9bf" />
 
 # Frontend:
 
-```bash
-cd Client
-npm install
-npm run dev
-# Frontend runs on http://localhost:5173
+<img width="406" height="125" alt="image" src="https://github.com/user-attachments/assets/656af553-e4b6-4c9f-9391-bf1909e9cbf5" />
+
 
 
 
