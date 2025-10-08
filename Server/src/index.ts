@@ -3,6 +3,8 @@ import cors from 'cors';
 import { initializeDatabase } from './db.js';
 import routes from './routes.js';
 
+// print("Debugging")
+
 const app = express();
 const PORT = process.env.PORT || 4000;
 
@@ -10,7 +12,10 @@ const PORT = process.env.PORT || 4000;
 initializeDatabase();
 
 // Middleware
-app.use(cors());
+app.use(cors({
+  origin: "https://helpdesk-tre2.onrender.com" // your deployed client URL
+}));
+
 app.use(express.json());
 
 // Routes
@@ -23,6 +28,6 @@ app.use((err: any, req: express.Request, res: express.Response, next: express.Ne
 });
 
 app.listen(PORT, () => {
-  console.log(`🚀 Server running on http://localhost:${PORT}`);
-  console.log(`📊 API available at http://localhost:${PORT}/api`);
+  console.log(`🚀 Server running on ${PORT}`);
+  console.log(`📊 API available at :${PORT}/api`);
 });
