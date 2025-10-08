@@ -8,7 +8,7 @@
   "dev": "node --loader ts-node/esm src/index.ts",
   "build": "tsc",
   "start": "node dist/index.js",
-  "postinstall": "npm install --build-from-source better-sqlite3"
+  "postinstall": "npm rebuild better-sqlite3 --build-from-source"
 
   },
   "keywords": [],
