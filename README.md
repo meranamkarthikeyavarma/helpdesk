@@ -117,6 +117,9 @@ curl -X POST http://localhost:4000/api/tickets \
 **Remember to update `VITE_API_BASE` to your production API URL!**
 ---
 
+**"Note: The repository includes a pre-populated app.db file with sample ticket data. First-time users can skip the seeding step and start using the application right away!"**
+---
+
 ⭐ If you found this project helpful, please give it a star!
 
 📫 Questions? Open an issue or reach out!
