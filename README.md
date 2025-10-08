@@ -18,14 +18,14 @@ A full-stack ticket management system built with **React + TypeScript (Frontend)
 
 ## ## **💻 Local Setup**
 
-Backend:
+# Backend:
 
 cd Server
 npm install
 npm run dev
 # Server runs on http://localhost:4000
 
-Frontend:
+# Frontend:
 
 cd Client
 npm install
