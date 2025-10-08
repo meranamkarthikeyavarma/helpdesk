@@ -1,7 +1,9 @@
 import axios from 'axios';
 import type { Ticket, Comment, TicketCreate, TicketUpdate, CommentCreate } from '../types';
 
-const API_BASE = import.meta.env.VITE_API_BASE || 'http://localhost:4000';
+// const API_BASE = import.meta.env.VITE_API_BASE || 'http://localhost:4000';
+const API_BASE = import.meta.env.VITE_API_BASE || 'https://helpdesk-2ew6.onrender.com';
+
 
 const api = axios.create({
   baseURL: `${API_BASE}/api`,
