@@ -14,5 +14,5 @@ A full-stack ticket management system built with **React + TypeScript (Frontend)
 
 
 ## ## **📁 Project Structure**
-<img width="742" height="417" alt="image" src="https://github.com/user-attachments/assets/ea0dd437-d645-4ffa-ab7b-cc9881d618e1" />
+<img width="391" height="413" alt="image" src="https://github.com/user-attachments/assets/0d52e511-74bc-4371-90db-d6798552e117" />
 
