@@ -20,6 +20,7 @@ A full-stack ticket management system built with **React + TypeScript (Frontend)
 
 # Backend:
 
+```bash
 cd Server
 npm install
 npm run dev
@@ -27,6 +28,7 @@ npm run dev
 
 # Frontend:
 
+```bash
 cd Client
 npm install
 npm run dev
