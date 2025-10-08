@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import { useNavigate, useParams } from 'react-router-dom';
 import { Clock, User, Trash2, ArrowLeft, AlertCircle, FileText } from 'lucide-react';
 import type { Ticket, Status } from '../types';

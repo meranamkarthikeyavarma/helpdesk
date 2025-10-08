@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import {useState, useEffect } from 'react';
 import { useNavigate, useSearchParams } from 'react-router-dom';
 import { Search, Plus, Filter, MessageSquare, AlertCircle, Clock, User, TrendingUp } from 'lucide-react';
 import type { Ticket } from '../types';
