@@ -1,33 +1,117 @@
-## ## 🏷️ **Mini Help Desk**
+# 🎫 Mini Helpdesk - Ticket Management System
 
-A full-stack ticket management system built with **React + TypeScript (Frontend)** and **Express + TypeScript (Backend)**. Users can create tickets, update their status, and add comments.  
+A full-stack ticket management system built as a 2-day intern project. Create, track, and manage support tickets with real-time status updates and collaborative commenting.
+
+## 🚀 Live Demo
+
+**Deployed Application:** https://helpdesk-tre2.onrender.com/tickets
+
+## ✨ Features
+
+- **Ticket Management**: Create, view, update, and delete support tickets
+- **Status Tracking**: Track tickets through their lifecycle (Open → In Progress → Closed)
+- **Priority Levels**: Categorize tickets by priority (Low, Medium, High)
+- **Commenting System**: Collaborate on tickets with threaded comments
+- **Smart Filtering**: Search tickets by title and filter by status
+- 
+
+## 🛠️ Tech Stack
+
+### Frontend
+- **React** with TypeScript
+- **Vite** for blazing-fast development
+- **React Router** for navigation
+- **React Hook Form** for form management
+- **Tailwind CSS** for styling
+- **Axios** for API communication
+- **Zod** for validation
+
+### Backend
+- **Node.js** with Express
+- **SQLite** database via better-sqlite3
+- **TypeScript** for type safety
+- **Zod** for request validation
+- **CORS** enabled for cross-origin requests
+
+## 🏗️ Project Structure
+
+```
+helpdesk/
+├── client/                 # React frontend
+│   ├── src/
+│   │   ├── components/    # React components
+│   │   ├── pages/         # Page components
+│   │   ├── lib/           # Utilities & API client
+│   │   └── App.tsx
+│   └── package.json
+├── server/                # Express backend
+│   ├── src/
+│   │   ├── db.ts          # Database setup
+│   │   ├── routes.ts      # API routes
+│   │   ├── validators.ts  # Zod schemas
+│   │   ├── seed.ts        # Demo data seeder
+│   │   └── index.ts       # Server entry point
+│   └── package.json
+└── README.md
+```
+
+## 🚦 Getting Started
+
+### 1. Clone the Repository
+
+```bash
+git clone https://github.com/meranamkarthikeyavarma/helpdesk
+cd helpdesk
+```
+
+### 2. Install Dependencies
+
+```bash
+# Install backend dependencies
+cd server
+npm install
+
+# Install frontend dependencies
+cd ../client
+npm install
+```
 
 
-## ## **✨ Features**
+### 3. Run the Application
 
-- 📃 **List all tickets**
-- 🔍 **View ticket details and comments**
-- ➕ **Create**, ✏️ **Update**, ❌ **Delete tickets**
-- 💬 **Add comments to tickets**
-- 🌐 **Fully deployed client and server**
-- 🎯 **Demo data seeded for testing**
+**Terminal 1 - Backend:**
+```bash
+cd server
+npm run dev
+# Server runs on http://localhost:4000
+```
+
+**Terminal 2 - Frontend:**
+```bash
+cd client
+npm run dev
+# Client runs on http://localhost:5173
+```
+
+Visit `http://localhost:5173` in your browser!
+
+### Example Request
+
+```bash
+curl -X POST http://localhost:4000/api/tickets \
+  -H "Content-Type: application/json" \
+  -d '{
+    "title": "Printer not working",
+    "description": "2nd floor HP printer is offline",
+    "priority": "HIGH",
+    "reporter": "John Doe"
+  }'
+```
 
 
-## ## **📁 Project Structure**
-<img width="391" height="413" alt="image" src="https://github.com/user-attachments/assets/0d52e511-74bc-4371-90db-d6798552e117" />
+**Remember to update `VITE_API_BASE` to your production API URL!**
+---
 
-## ## **💻 Local Setup**
+⭐ If you found this project helpful, please give it a star!
 
-# Backend:
-
-<img width="406" height="127" alt="image" src="https://github.com/user-attachments/assets/dffd9af4-c4a2-4c81-b8c4-8a622ffbb9bf" />
-
-# Frontend:
-
-<img width="406" height="125" alt="image" src="https://github.com/user-attachments/assets/656af553-e4b6-4c9f-9391-bf1909e9cbf5" />
-
-
-
-
-
-
+📫 Questions? Open an issue or reach out!
